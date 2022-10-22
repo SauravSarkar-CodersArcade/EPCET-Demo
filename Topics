@@ -1,0 +1,28 @@
+Command Line Arguments : (String[] args)
+Arrays 1D,
+2D MD
+
+Conditional :
+1. simple if
+2. if-else
+3. if-else if ladder
+4. nested if
+
+Loops:
+When we know the number of steps, we use for loop.n (Finite)
+When we don't know the number of steps, we use while loop. (Infinite)
+
+while
+do-while
+for
+nested for
+for each / enhanced for loop
+
+Capgemini Sep : 2022
+Split a string data into a String array by taking a
+reference character.
+
+
+
+
+

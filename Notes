@@ -1,0 +1,284 @@
+Classes: Class is a blueprint with the help of which
+we can create objects. It can have group of variables, methods, etc.
+Classes don't occupy memory or space.
+
+Class Vehicle :
+BMTC
+Wagon R
+
+
+Packages: A package is a collection of classes or interfaces
+It is just like the folders in our system.
+
+function: A block of code which can perform a specific task
+Methods : when functions are written inside classes,
+they are called methods.
+
+static keyword: It is a non-access modifier which is used for proper
+memory management.
+static members belong to the class and not to any object.
+We don't need to create any object to access static members.
+We can access them directly.
+
+TCS : Why is the main method static in Java?
+The main method in Java is static because the JVM can directly access
+it without creating any object. It's for smarter memory management.
+
+In Java versions before Java 7, we could run our programs without main method. After Java 7 we cannot.
+
+Constructor:
+It is a special method which is used
+to create objects/instances.
+It has the same name as of the class
+with a parenthesis().
+Whenever we create an object, we need to call the
+constructor using the 'new' keyword.
+There are two types:
+1. Default: It's created by the JVM if we don't
+create one.
+2. Parameterised:
+    a. Changing the datatype
+    b. Changing the number of parameters
+
+Pillars of OOPs:
+
+1. Encapsulation : Binding the code members, data,
+variables into one block so that it doesn't get
+accidentally modified. This is called encapsulation.
+Real World Example: Capsule
+2. Inheritance : Inheriting the properties of the parent
+class into the child class is called inheritance.
+1. Single Level
+2. Multi Level
+3. Hybrid
+4. Multiple : Directly not possible Use: (Interfaces)
+5. Hierarchical
+3. Abstraction
+4. Polymorphism
+
+MindTree 2022:
+Illustrate the use of this keyword and show
+its uses. Also show the limitations when we don't
+use it.
+
+Which is the parent class of all classes in Java?
+Object Class
+Which is the parent class of all Exceptions and Errors?
+Throwable Class
+Inner Class ? Pending
+Inheritance:
+Single : Done
+Multi : Done
+Multiple : Pending (Interfaces)
+
+Abstraction:
+Showing : What
+Not Showing : How
+Data Hiding
+Hiding the implementation & showing the functionality to the user.
+1. Abstract classes & methods (0-100% Abstraction)
+In abstract classes & methods we have an abstract class.
+It can have abstract and concrete methods.
+If we have only abstract methods, its 100% abstraction.
+If we have any normal/concrete methods, its not 100% abstraction.
+The abstract method body is provided in the class that inherits it.
+We cannot create object of an abstract class.
+2. Interfaces (100% Abstraction)
+Interface: It is a totally abstract class used to group related methods together.
+We cannot have body of any methods in an interface. We cannot create an object of an
+interface. The body of the methods are provided in the classes implementing the
+interface. We make use of the 'implements' keyword.
+Interfaces can achieve 100% abstraction.
+
+Polymorphism: One function many forms/meanings
+Poly : Many
+Morph : Forms / Shapes
+Same function can have different meaning in different scenarios.
+1. Method Overloading : Same Class :
+a) changing the  number of parameters
+b) changing the data type of the parameters
+2. Method Overriding : Different Classes
+Saurav:
+Class : trainer
+Restaurant : customer
+Home : son
+Person doesn't change
+Role Changes
+How to maintain insertion order in an HashMap ? capgemini 2022 August
+Sort an ArrayList using the Collections class. TCS 2022 Sep
+Remove elements from a Collection using Iterator or lambda expression.
+MindTree : June 2022
+
+MultiThreading Concept
+Inner Class Concept: If we need to make any class only accessible
+to one class, we declare an inner class. That's for security and
+the inner class can access all the members of the outer class.
+
+Outer$Inner : This is how JVM interprets the inner class.
+Priority Queue Concept : It follows the ascending order because
+sometimes we need to follow the priority. That's why the name is
+Priority Queue.
+
+clrscr();
+getch();
+Garbage Collection In Java ? Automatically (JVM)
+Object Class: gc();
+Threads are the Smallest Unit of Programming.
+In Java, threads are used to perform Multitasking, MultiProcessing.
+If there is an exception in one thread, all the other threads are not
+disturbed.
+Each thread is independent of each other.
+The implement Multitasking we can use:
+1. Thread class
+2. Runnable Interface
+Thread life cycle:
+init()
+start(): multi tasking
+run() : single unit run / one will finish and other will start
+wait()
+block()
+destroy() - dead
+sleep() - Thread.sleep(1000) - milliseconds - 1 second
+
+Association In Java ?
+Relation Between Classes :
+1. Aggregation : Loose Coupling : Music Player & Car
+2. Composition : Tight Coupling : Car & Engine
+
+Tasks:
+Exception handling: An exception is something which disturbs the normal flow of a program.
+
+try-catch
+try-multiple catch
+try-catch-finally
+throws, throw & Throwable concepts
+Errors & Exceptions
+
+HashTable concepts : K-V
+SHA-256 - Encryption
+HashTable Introduction:
+/** Important Points
+ * A hashTable is an array of a list. Each list in a HashTable is called a bucket (K-V)
+ * The position of the bucket is determined using hashcode & it ha a hashcode() method as well.
+ * A HashTable has values based on keys
+ * HashTable contains unique elements
+ * It doesn't allow null values (null key or null value)
+ * HashTable is synchronized/Thread-Safe
+ * Initial Capacity : 11 LoadFactor : 0.75
+ */
+Distributed K-V storage
+HashTable Methods : getOrDefault() -> Accessing Elements & putIfAbsent() -> Adding Elements
+Interview Question on HashTable Linear Memory using K-V:
+Demonstrate the working of a Linear Memory HashTable by taking a Book class and accepting
+entries:
+Book Constraints:
+(id, name, author, publisher, quantity) -> Book
+Capgemini 2022 August
+HashTable vs HashMap
+
+File Systems (java.io)
+File Handling in Java
+CRUD Operations -> Create Read Update Delete
+Text, Excel
+Java Jars
+Pattern Search / Pattern Matching (Regular Expressions) Pattern / Matcher ?
+
+TCS Sep: 2022
+Given a input string pattern, compare it to a source string using the
+Pattern & Matcher classes in Java. (java.util.regex)
+Constraint: Ignore the case-sensitiveness of the input pattern.
+
+Input Data: core java
+Source : We are learning Core Java
+Output : Match Found....!!!!
+
+Interview Question :
+
+Why are strings immutable?
+Strings are immutable because we can just create
+a copy of a string. We cannot modify the contents.
+The original string will be intact.
+
+To create modifiable/mutable strings we use the
+StringBuffer & StringBuilder classes in Java.
+MindTree : Execute a TestCase to check BufferBuilder performance in Strings.
+
+Topics for today:
+final Keyword in Java:
+final keyword is a non access modifier. It can be placed in front of :
+1.class
+final class: we cannot inherit a final class
+2.final method: we cannot override a final method
+3.final parameter: we cannot change the final parameter value
+4.final variable: we cannot change a final variable value. It is constant throughout.
+If final variable is not initialized, it is done inside the constructor.
+If static final variable is not initialized, it is done inside the static block.
+Instance Initializer Block (IIB) :
+It is always called before the constructor and after the static blocks.
+
+Java Swings:
+GUI Applications
+POJO Plain Old Java Object
+Read Excel Data : File Handling: Jar (Java Archive) (Collection Of Java Libraries)
+commons-collection4-4.4.jar
+poi
+poi-ooxml
+poi-ooxml-schemas
+xml beans
+Repository : Maven Central Repository : Build Tools
+Java Date Class : Interview Question & Examples
+* LocalDate,
+* LocalTime,
+* LocalDateTime,
+* Formatted Date&Time
+
+I am going & you are coming.
+Grammar : Backbone of Natural Language
+Syntax : Backbone of Programming Language
+
+TackleBoX, TCS :
+Write a java program to display the current date & time in the format:
+1) Sat, Oct 22 2022
+2) 288, Oct 22 2022
+
+Difference between final, finally & finalize :
+final is a keyword, non-access modifier
+finally {} is a block of exception handling in Java.
+finalize() is a method of the Object class in Java. It is automatically used for garbage Collection.
+when finalize method is called, it calls gc(), and the resources are released.
+
+Q3. Create a Patient Class with a Parameterised Constructor to
+load the following data into each instance:
+1. patientName
+2. patientAge
+3. doa (dateOfArrival)
+4. disease
+Your class should have a method called patientDetails() which when called
+should display all the attributes.
+Note:
+The diseases should be any one from :
+a) Malaria
+b) Jaundice
+c) Influenza
+d) SARS-COVID-19
+Accenture : May 2022
+Create a Information CLass which has the parameters :
+blockNo, floorNo, roomNo, bedNo.
+When you call the patientDetails() method, these should be displayed as well.
+
+int[] arr = {1,2,5,4,7,8,11,20};
+even, odd
+2,4,8,20,1,5,7,11
+
+String str = "EPCET COLLEGE";
+Delete all occurrences of the character 'C'. // EPET OLLEGE
+GitHub : GIT
+
+
+
+
+
+
+
+
+
